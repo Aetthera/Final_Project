@@ -1,3 +1,16 @@
 body{
     background-color: cornsilk;
 }
+
+login_block{
+    position: relative;
+    left: 20%;
+}
+
+h3{
+    text-align: center;
+}
+
+fieldset{
+    text-align: center;
+}
