@@ -81,13 +81,13 @@ header{
 }
 
 .wrapper {
-    position: relative;
+    position: fixed;
     width: 400px;
     height: 200 px;
-    background: transparent;
+    background: blur;
+    backdrop-filter: blur(10px);
     border: 2px solid rgba(255, 255, 255, .5); 
     border-radius: 20px;
-    backdrop-filter: blur (20px);
     box-shadow: 0 0 30px rgba(0, 0, 0, .5); 
     display: flex;
     justify-content: center;
