@@ -13,7 +13,7 @@ function validateForm() {
     //username validation
     let name = document.forms["login-form"]["username"].value;
     if (name == "") {
-      alert("Name must be filled out");
+      alert("Name must be filled in");
       return false;
     }
 
