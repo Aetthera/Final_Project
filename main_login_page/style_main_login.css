@@ -14,6 +14,7 @@ body {
     background: url('../assets/images/background.jpg ') no-repeat;
     background-size: cover;
     background-position: center;
+    
 }
 
 header{
@@ -80,54 +81,36 @@ header{
     color: #162938;
 }
 
-.neonIntro {
-    color: 	#FFF5EE;
-    letter-spacing: 3px;
-    text-shadow:
-      0 0 7px #fff,
-      0 0 10px #fff,
-      0 0 21px #fff,
-      0 0 42px #FFF5EE,
-      0 0 82px #FFF5EE,
-      0 0 92px #FFF5EE,
-      0 0 102px #FFF5EE,
-      0 0 151px #FFF5EE;
+.descrPr{
+    text-decoration:underline;
+    text-align: left ;
+    color: #162938;
+    opacity: 0.5;
 }
 
-.animat {
-    animation: pulsate 1.5s infinite alternate;     
+.intro .title {
+    color:#FFF5EE;
+    font-size: 45px;
+    text-align: center;
+    transition: .3s;
+}
+.intro .subtitle {
+    color:#FFF5EE;
+    font-size: 25px;
+    text-align: center;
+    transition: .5s;
 }
 
-@keyframes pulsate {
-    
-    100% {
-  
-        text-shadow:
-        0 0 4px #fff,
-        0 0 11px #fff,
-        0 0 19px #fff,
-        0 0 40px #FFF5EE,
-        0 0 80px #FFF5EE,
-        0 0 90px #FFF5EE,
-        0 0 100px #FFF5EE,
-        0 0 150px #FFF5EE;
-    
-    }
-    
-    0% {
-  
-      text-shadow:
-      0 0 2px #fff,
-      0 0 4px #fff,
-      0 0 6px #fff,
-      0 0 10px #fff,
-      0 0 45px #fff,
-      0 0 55px #FFF5EE,
-      0 0 70px #FFF5EE,
-      0 0 80px #FFF5EE;
-    }
+.intro .title:hover{
+    font-size: 65px;
+    color: gold;
 }
 
+.intro .subtitle:hover{
+    font-size: 55px;
+    color:hotpink;
+    transform: rotate(-10deg);
+}
 
 .wrapper {
     position: fixed;
@@ -187,20 +170,18 @@ header{
 
 .input-box label {
     position: absolute;
-    top: 30%;
+    top: -20%;
     left: 5px;
     transform: translateY (-50%);
     font-size: 0.9em; 
     color: #FFF5EE; 
+    opacity: 0.5;
     font-weight: 500;
     pointer-events: none;
     transition: .5s;
 }
 
-.input-box input:focus~label,
-.input-box input:valid~label {
-    top: -5px;
-}
+
 
 .input-box input {
     width: 100%;
