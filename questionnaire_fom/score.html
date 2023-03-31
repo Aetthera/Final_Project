@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Patrick Saint-Louis" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/icon/icon-apps-svgrepo.svg" sizes="any" type="image/svg+xml" />
+    <title>Well-Being Agency|Home|Well-Being Services for Companies and Individuals</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/main.js"></script>
+    </style>
+</head>
+
+<body>
+
+    <div class="main-question-box">
+
+        <table>
+            <tr>
+                <th rowspan="2">QUESTION</th>
+                <th colspan="4">SCORE PER ANSWER CATEGOGY</th>
+            </tr>
+            <tr>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td id="q1a"></td>
+                <td id="q1b"></td>
+                <td id="q1c"></td>
+                <td id="q1d"></td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td id="q2a"></td>
+                <td id="q2b"></td>
+                <td id="q2c"></td>
+                <td id="q2d"></td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td id="q3a"></td>
+                <td id="q3b"></td>
+                <td id="q3c"></td>
+                <td id="q3d"></td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td id="q4a"></td>
+                <td id="q4b"></td>
+                <td id="q4c"></td>
+                <td id="q4d"></td>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td id="q5a"></td>
+                <td id="q5b"></td>
+                <td id="q5c"></td>
+                <td id="q5d"></td>
+            </tr>
+            <tr>
+                <th>6</th>
+                <td id="q6a"></td>
+                <td id="q6b"></td>
+                <td id="q6c"></td>
+                <td id="q6d"></td>
+            </tr>
+            <tr>
+                <th>7</th>
+                <td id="q7a"></td>
+                <td id="q7b"></td>
+                <td id="q7c"></td>
+                <td id="q7d"></td>
+            </tr>
+            <tr>
+                <th>8</th>
+                <td id="q8a"></td>
+                <td id="q8b"></td>
+                <td id="q8c"></td>
+                <td id="q8d"></td>
+            </tr>
+            <tr>
+                <th>9</th>
+                <td id="q9a"></td>
+                <td id="q9b"></td>
+                <td id="q9c"></td>
+                <td id="q9d"></td>
+            </tr>
+            <tr>
+                <th>10</th>
+                <td id="q10a"></td>
+                <td id="q10b"></td>
+                <td id="q10c"></td>
+                <td id="q10d"></td>
+            </tr>
+            <tr>
+                <th>11</th>
+                <td id="q11a"></td>
+                <td id="q11b"></td>
+                <td id="q11c"></td>
+                <td id="q11d"></td>
+            </tr>
+        </table>
+
+    </div>
+
+
+    <script>
+
+        var cache = window.sessionStorage;
+        var q1a = cache.getItem("q1a");
+        var q1b = cache.getItem("q1b");
+        var q1c = cache.getItem("q1c");
+        var q1d = cache.getItem("q1d");
+
+        var q2a = cache.getItem("q2a");
+        var q2b = cache.getItem("q2b");
+        var q2c = cache.getItem("q2c");
+        var q2d = cache.getItem("q2d");
+
+        var q3a = cache.getItem("q3a");
+        var q3b = cache.getItem("q3b");
+        var q3c = cache.getItem("q3c");
+        var q3d = cache.getItem("q3d");
+
+        var q4a = cache.getItem("q4a");
+        var q4b = cache.getItem("q4b");
+        var q4c = cache.getItem("q4c");
+        var q4d = cache.getItem("q4d");
+
+        var q5a = cache.getItem("q5a");
+        var q5b = cache.getItem("q5b");
+        var q5c = cache.getItem("q5c");
+        var q5d = cache.getItem("q5d");
+
+        var q6a = cache.getItem("q6a");
+        var q6b = cache.getItem("q6b");
+        var q6c = cache.getItem("q6c");
+        var q6d = cache.getItem("q6d");
+
+        var q7a = cache.getItem("q7a");
+        var q7b = cache.getItem("q7b");
+        var q7c = cache.getItem("q7c");
+        var q7d = cache.getItem("q7d");
+
+        var q8a = cache.getItem("q8a");
+        var q8b = cache.getItem("q8b");
+        var q8c = cache.getItem("q8c");
+        var q8d = cache.getItem("q8d");
+
+        var q9a = cache.getItem("q9a");
+        var q9b = cache.getItem("q9b");
+        var q9c = cache.getItem("q9c");
+        var q9d = cache.getItem("q9d");
+
+        var q10a = cache.getItem("q10a");
+        var q10b = cache.getItem("q10b");
+        var q10c = cache.getItem("q10c");
+        var q10d = cache.getItem("q10d");
+
+        var q11a = cache.getItem("q11a");
+        var q11b = cache.getItem("q11b");
+        var q11c = cache.getItem("q11c");
+        var q11d = cache.getItem("q11d");
+
+
+
+
+
+        /*cache.removeItem("key1");
+        console.log("Saved data: " + cache.getItem("key1"));*/
+
+
+        var msg1 = document.getElementById("q1a");
+        msg1.innerHTML = q1a;
+
+        var msg2 = document.getElementById("q1b");
+        msg2.innerHTML = q1b;
+
+        var msg3 = document.getElementById("q1c");
+        msg3.innerHTML = q1c;
+
+        var msg4 = document.getElementById("q1d");
+        msg4.innerHTML = q1d;
+
+
+        var msg1 = document.getElementById("q2a");
+        msg1.innerHTML = q2a;
+
+        var msg2 = document.getElementById("q2b");
+        msg2.innerHTML = q2b;
+
+        var msg3 = document.getElementById("q2c");
+        msg3.innerHTML = q2c;
+
+        var msg4 = document.getElementById("q2d");
+        msg4.innerHTML = q2d;
+
+        
+        
+        var msg1 = document.getElementById("q3a");
+        msg1.innerHTML = q3a;
+
+        var msg2 = document.getElementById("q3b");
+        msg2.innerHTML = q3b;
+
+        var msg3 = document.getElementById("q3c");
+        msg3.innerHTML = q3c;
+
+        var msg4 = document.getElementById("q3d");
+        msg4.innerHTML = q3d;
+
+        
+        var msg1 = document.getElementById("q3a");
+        msg1.innerHTML = q3a;
+
+        var msg2 = document.getElementById("q3b");
+        msg2.innerHTML = q3b;
+
+        var msg3 = document.getElementById("q3c");
+        msg3.innerHTML = q3c;
+
+        var msg4 = document.getElementById("q3d");
+        msg4.innerHTML = q3d;
+
+        var msg1 = document.getElementById("q4a");
+        msg1.innerHTML = q4a;
+
+        var msg2 = document.getElementById("q4b");
+        msg2.innerHTML = q4b;
+
+        var msg3 = document.getElementById("q4c");
+        msg3.innerHTML = q4c;
+
+        var msg4 = document.getElementById("q4d");
+        msg4.innerHTML = q4d;
+
+
+        var msg1 = document.getElementById("q5a");
+        msg1.innerHTML = q5a;
+
+        var msg2 = document.getElementById("q5b");
+        msg2.innerHTML = q5b;
+
+        var msg3 = document.getElementById("q5c");
+        msg3.innerHTML = q5c;
+
+        var msg4 = document.getElementById("q5d");
+        msg4.innerHTML = q5d;
+
+
+        var msg1 = document.getElementById("q6a");
+        msg1.innerHTML = q6a;
+
+        var msg2 = document.getElementById("q6b");
+        msg2.innerHTML = q6b;
+
+        var msg3 = document.getElementById("q6c");
+        msg3.innerHTML = q6c;
+
+        var msg4 = document.getElementById("q6d");
+        msg4.innerHTML = q6d;
+
+
+        var msg1 = document.getElementById("q7a");
+        msg1.innerHTML = q7a;
+
+        var msg2 = document.getElementById("q7b");
+        msg2.innerHTML = q7b;
+
+        var msg3 = document.getElementById("q7c");
+        msg3.innerHTML = q7c;
+
+        var msg4 = document.getElementById("q7d");
+        msg4.innerHTML = q7d;
+
+
+        var msg1 = document.getElementById("q8a");
+        msg1.innerHTML = q8a;
+
+        var msg2 = document.getElementById("q8b");
+        msg2.innerHTML = q8b;
+
+        var msg3 = document.getElementById("q8c");
+        msg3.innerHTML = q8c;
+
+        var msg4 = document.getElementById("q8d");
+        msg4.innerHTML = q8d;
+
+        
+        var msg1 = document.getElementById("q9a");
+        msg1.innerHTML = q9a;
+
+        var msg2 = document.getElementById("q9b");
+        msg2.innerHTML = q9b;
+
+        var msg3 = document.getElementById("q9c");
+        msg3.innerHTML = q9c;
+
+        var msg4 = document.getElementById("q9d");
+        msg4.innerHTML = q9d;
+
+
+        var msg1 = document.getElementById("q10a");
+        msg1.innerHTML = q10a;
+
+        var msg2 = document.getElementById("q10b");
+        msg2.innerHTML = q10b;
+
+        var msg3 = document.getElementById("q10c");
+        msg3.innerHTML = q10c;
+
+        var msg4 = document.getElementById("q10d");
+        msg4.innerHTML = q10d;
+
+
+        var msg1 = document.getElementById("q11a");
+        msg1.innerHTML = q11a;
+
+        var msg2 = document.getElementById("q11b");
+        msg2.innerHTML = q11b;
+
+        var msg3 = document.getElementById("q11c");
+        msg3.innerHTML = q11c;
+
+        var msg4 = document.getElementById("q11d");
+        msg4.innerHTML = q11d;
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
