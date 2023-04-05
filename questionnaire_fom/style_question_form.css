@@ -66,6 +66,12 @@ header{
     transform: scaleX(1);
 }
 
+/* SCORE PAGE*/
+.main-question-box-score{
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
 /* Intro */
 .questionnaire {
     position:relative;
