@@ -93,14 +93,15 @@ header{
 }
 
 .question-title{
-    font-size: 35px;
+    font-size: 30px;
     text-transform: uppercase;
     line-height: 2;
     margin-top: 10%;
+    color:antiquewhite !important;
 }
 
 .question-subtitle{
-    font-size: 45px;
+    font-size: 35px;
     text-decoration: #FFF5EE underline;
 }
 
@@ -147,6 +148,7 @@ input[type='radio'] {
     border-radius: 5px;
     width: 16px;
     height: 16px;
+    cursor: pointer;
 }
 
 input[type='radio']:checked {
@@ -195,7 +197,6 @@ footer{
     background: transparent;
     height: auto; 
     width: 100vw; 
-    padding-top: 100px;
     margin-bottom: -20%;
     margin-top: 100%; 
     color: #FFF5EE;

@@ -114,13 +114,16 @@
             </tr>
         </table>
        
-        <small>
-    Total your columns and place your results in the blanks below.
-            
-           
-            
-            
-        </small>
+        <p><span id="score1"></span> a. Orange</p>
+        <p><span id="score2"></span> b. Green</p>
+        <p><span id="score3"></span> c. Blue</p>
+        <p><span id="score4"></span> d. Gold</p>
+
+        <h3>Your first colour is:</h3>
+        <p id="fcolour"></p>
+
+        <h3>Your second colour is:</h3>
+        <p id="scolour"></p>
        
     </div>
 
@@ -143,10 +146,19 @@
             document.getElementById("q" + i + "c").innerHTML = c;
             document.getElementById("q" + i + "d").innerHTML = d;
 
-            A += parseInt(a);
-            B += parseInt(b);
-            C += parseInt(c);
-            D += parseInt(d);
+            // try to parse the value of each answer. If it's not
+            // a number, just don't add it to the total (Good for testing).
+            const a_val = parseInt(a);
+            if (!isNaN(a_val)) A += a_val;
+
+            const b_val = parseInt(b);
+            if (!isNaN(b_val)) B += b_val;
+
+            const c_val = parseInt(c);
+            if (!isNaN(c_val)) C += c_val;
+
+            const d_val = parseInt(d);
+            if (!isNaN(d_val)) D += d_val;
             
         }
 
@@ -155,42 +167,46 @@
         document.getElementById("totalC").innerHTML = C;
         document.getElementById("totalD").innerHTML = D;
 
-        
-        if (A > B && A> C && A> D) {
-            document.getElementById("What is your first color?").innerHTML = "Orange";
-        }
-        else if (B > A && B> C && B> D) {
-            document.getElementById("What is your first color?").innerHTML = "Green";
-        }
-        else if (C> A && C> B && C> D) {
-            document.getElementById("What is your first color?").innerHTML = "Blue";
-        }
-        else if (D> A && D> B && D> C) {
-            document.getElementById("What is your first color?").innerHTML = "Gold";
-        }
-        else {
-            document.getElementById("What is your first color?").innerHTML = "Error";
-        }
+        document.getElementById("score1").innerHTML = A;
+        document.getElementById("score2").innerHTML = B;
+        document.getElementById("score3").innerHTML = C;
+        document.getElementById("score4").innerHTML = D;
         
 
-        function nextBiggest(arr) {
-        let max = -Infinity, result = -Infinity;
+        var fcolour = "";
+        var scolour = "";
 
-        for (const value of arr) {
-        const nr = Number(value)
+        // sort the scores-
+        // https://stackoverflow.com/a/1063027
+        var scores = [A, B, C, D];
+        scores.sort(function(a, b){ return b - a });
 
-        if (nr > max) {
-        [result, max] = [max, nr] // save previous max
-        } else if (nr < max && nr > result) {
-        result = nr; // new second biggest
+        // find the highest score, and assign it to fcolour
+        if (scores[0] == A) {
+            fcolour = "Orange";
+        } else if (scores[0] == B) {
+            fcolour = "Green";
+        } else if (scores[0] == C) {
+            fcolour = "Blue";
+        } else if (scores[0] == D) {
+            fcolour = "Gold";
         }
+
+        // find the second highest score, and assign it to scolour
+        // (make sure it's not the same as the first in case of a tie!)
+        if (scores[1] == A && fcolour != "Orange") {
+            scolour = "Orange";
+        } else if (scores[1] == B && fcolour != "Green") {
+            scolour = "Green";
+        } else if (scores[1] == C && fcolour != "Blue") {
+            scolour = "Blue";
+        } else if (scores[1] == D && fcolour != "Gold") {
+            scolour = "Gold";
         }
 
-        return result;
-        }
+        document.getElementById("fcolour").innerHTML = fcolour;
+        document.getElementById("scolour").innerHTML = scolour;
 
-        const arr = [A,B,C,D];
-        console.log(nextBiggest(arr));
     </script>
 
 </body>
