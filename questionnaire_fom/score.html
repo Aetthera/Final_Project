@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content=" ie=edge">
+    <link rel="icon" href="img/icon/icon-apps-svgrepo.svg" sizes="any" type="image/svg+xml" />
+    <title>Score | Team 2</title>
+    <link rel="stylesheet" type="text/css" href="style_question_form.css">
+    <script type="text/javascript" src="js/main.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../assets/images/icon.png">
+</head>
+
+<body>
+    <header>
+        <h2 class="logo">TEAM 2</h2> 
+        <nav class="navigation">
+            <a href="../main_login_page/main_index_login.html">Home</a> 
+            <a href="../about_page/index_about_page.html">About</a> 
+        </nav>
+    </header>
+    <div class="main-question-box-score">
+
+        <table>
+            <tr>
+                <th rowspan="2">QUESTION</th>
+                <th colspan="4">SCORE PER ANSWER CATEGOGY</th>
+            </tr>
+            <tr>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td id="q1a"></td>
+                <td id="q1b"></td>
+                <td id="q1c"></td>
+                <td id="q1d"></td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td id="q2a"></td>
+                <td id="q2b"></td>
+                <td id="q2c"></td>
+                <td id="q2d"></td>
+            </tr>
+            <tr>
+                <th>3</th>
+                <td id="q3a"></td>
+                <td id="q3b"></td>
+                <td id="q3c"></td>
+                <td id="q3d"></td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td id="q4a"></td>
+                <td id="q4b"></td>
+                <td id="q4c"></td>
+                <td id="q4d"></td>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td id="q5a"></td>
+                <td id="q5b"></td>
+                <td id="q5c"></td>
+                <td id="q5d"></td>
+            </tr>
+            <tr>
+                <th>6</th>
+                <td id="q6a"></td>
+                <td id="q6b"></td>
+                <td id="q6c"></td>
+                <td id="q6d"></td>
+            </tr>
+            <tr>
+                <th>7</th>
+                <td id="q7a"></td>
+                <td id="q7b"></td>
+                <td id="q7c"></td>
+                <td id="q7d"></td>
+            </tr>
+            <tr>
+                <th>8</th>
+                <td id="q8a"></td>
+                <td id="q8b"></td>
+                <td id="q8c"></td>
+                <td id="q8d"></td>
+            </tr>
+            <tr>
+                <th>9</th>
+                <td id="q9a"></td>
+                <td id="q9b"></td>
+                <td id="q9c"></td>
+                <td id="q9d"></td>
+            </tr>
+            <tr>
+                <th>10</th>
+                <td id="q10a"></td>
+                <td id="q10b"></td>
+                <td id="q10c"></td>
+                <td id="q10d"></td>
+            </tr>
+            <tr>
+                <th>11</th>
+                <td id="q11a"></td>
+                <td id="q11b"></td>
+                <td id="q11c"></td>
+                <td id="q11d"></td>
+            </tr>
+            <tr>
+                <th>Total</th>
+                <td id="totalA"></td>
+                <td id="totalB"></td>
+                <td id="totalC"></td>
+                <td id="totalD"></td>
+            </tr>
+        </table>
+       
+        <p><span id="score1"></span> a. Orange</p>
+        <p><span id="score2"></span> b. Green</p>
+        <p><span id="score3"></span> c. Blue</p>
+        <p><span id="score4"></span> d. Gold</p>
+
+        <h3 style="text-align: left;">Your first colour is:</h3>
+        <p id="fcolour"></p>
+
+        <h3 style="text-align: left;">Your second colour is:</h3>
+        <p id="scolour"></p>
+       
+    </div>
+
+    <footer style="margin-top: 10% !important;">
+        <div class="footer-bottom">
+            <p>Copyright 2023. Designed by <span>Yijia | Alena | Yiling</span></p> 
+            <ul class="socials">
+                <li>
+                    <a href="https://www.facebook.com/home.php">
+                        <span class="icon facebook">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </span>
+                    </a>
+                
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/">
+                        <span class="icon instagram">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/">
+                        <span class="icon github">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/">
+                        <span class="icon linkedin">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- JS SCRIPT -->
+    <script src="question_logic.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+    <script>
+
+        const cache = window.sessionStorage;
+
+        var A = 0, B = 0, C = 0, D = 0;
+
+        for (var i = 1; i <= 11; i++) {
+
+            const a = cache.getItem("q" + i + "a");
+            const b = cache.getItem("q" + i + "b");
+            const c = cache.getItem("q" + i + "c");
+            const d = cache.getItem("q" + i + "d");
+
+            document.getElementById("q" + i + "a").innerHTML = a;
+            document.getElementById("q" + i + "b").innerHTML = b;
+            document.getElementById("q" + i + "c").innerHTML = c;
+            document.getElementById("q" + i + "d").innerHTML = d;
+
+            // try to parse the value of each answer. If it's not
+            // a number, just don't add it to the total (Good for testing).
+            const a_val = parseInt(a);
+            if (!isNaN(a_val)) A += a_val;
+
+            const b_val = parseInt(b);
+            if (!isNaN(b_val)) B += b_val;
+
+            const c_val = parseInt(c);
+            if (!isNaN(c_val)) C += c_val;
+
+            const d_val = parseInt(d);
+            if (!isNaN(d_val)) D += d_val;
+            
+        }
+
+        document.getElementById("totalA").innerHTML = A;
+        document.getElementById("totalB").innerHTML = B;
+        document.getElementById("totalC").innerHTML = C;
+        document.getElementById("totalD").innerHTML = D;
+
+        document.getElementById("score1").innerHTML = A;
+        document.getElementById("score2").innerHTML = B;
+        document.getElementById("score3").innerHTML = C;
+        document.getElementById("score4").innerHTML = D;
+        
+
+        var fcolour = "";
+        var scolour = "";
+
+        // sort the scores-
+        // https://stackoverflow.com/a/1063027
+        var scores = [A, B, C, D];
+        scores.sort(function(a, b){ return b - a });
+
+        // find the highest score, and assign it to fcolour
+        if (scores[0] == A) {
+            fcolour = "Orange";
+        } else if (scores[0] == B) {
+            fcolour = "Green";
+        } else if (scores[0] == C) {
+            fcolour = "Blue";
+        } else if (scores[0] == D) {
+            fcolour = "Gold";
+        }
+
+        // find the second highest score, and assign it to scolour
+        // (make sure it's not the same as the first in case of a tie!)
+        if (scores[1] == A && fcolour != "Orange") {
+            scolour = "Orange";
+        } else if (scores[1] == B && fcolour != "Green") {
+            scolour = "Green";
+        } else if (scores[1] == C && fcolour != "Blue") {
+            scolour = "Blue";
+        } else if (scores[1] == D && fcolour != "Gold") {
+            scolour = "Gold";
+        }
+
+        document.getElementById("fcolour").innerHTML = fcolour;
+        document.getElementById("scolour").innerHTML = scolour;
+
+    </script>
+
+</body>
+
+</html>
