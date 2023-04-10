@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content=" ie=edge">
     <link rel="icon" href="img/icon/icon-apps-svgrepo.svg" sizes="any" type="image/svg+xml" />
-    <title>Score | Team 2</title>
+    <title>Score | Team 2 </title>
     <link rel="stylesheet" type="text/css" href="style_question_form.css">
     <script type="text/javascript" src="js/main.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Viga&display=swap" rel="stylesheet">
@@ -25,14 +25,15 @@
 
         <table>
             <tr>
-                <th rowspan="2">QUESTION</th>
-                <th colspan="4">SCORE PER ANSWER CATEGOGY</th>
+                <th style="padding: 10px;">QUESTION</th>
+                <th style="padding: 10px;" colspan="4">SCORE PER ANSWER CATEGOGY</th>
             </tr>
             <tr>
-                <th>A</th>
-                <th>B</th>
-                <th>C</th>
-                <th>D</th>
+                <th style="padding: 10px;">--</th>
+                <th style="padding: 10px;">A</th>
+                <th style="padding: 10px;">B</th>
+                <th style="padding: 10px;">C</th>
+                <th style="padding: 10px;">D</th>
             </tr>
             <tr>
                 <th>1</th>
@@ -119,21 +120,24 @@
                 <td id="totalD"></td>
             </tr>
         </table>
-       
-        <p><span id="score1"></span> a. Orange</p>
-        <p><span id="score2"></span> b. Green</p>
-        <p><span id="score3"></span> c. Blue</p>
-        <p><span id="score4"></span> d. Gold</p>
+       <div style="padding: 0 28%;">
+            <p class="p-score color-score">A Orange:&nbsp;&nbsp;<span id="score1"></span></p>
+            <p class="p-score color-score">B Green:&nbsp;&nbsp;<span id="score2"></span></p>
+            <p class="p-score color-score">C Blue:&nbsp;&nbsp;<span id="score3"></span></p>
+            <p class="p-score color-score">D Gold:&nbsp;&nbsp;<span id="score4"></span></p>
+        </div>
+        
 
-        <h3 style="text-align: left;">Your first colour is:</h3>
-        <p id="fcolour"></p>
+        <h3 style="font-size: 25px;">Your first colour is:</h3>
+        <p class="p-score" id="fcolour"></p>
 
-        <h3 style="text-align: left;">Your second colour is:</h3>
-        <p id="scolour"></p>
+        <h3 style="font-size: 25px;">Your second colour is:</h3>
+        <p class="p-score" id="scolour"></p>
+        <p class="p-more">To find out more about your colour go to <a href="../about_page/index_about_page.html">about</a> page</p>
        
     </div>
 
-    <footer style="margin-top: 5% !important;">
+    <footer style="margin-bottom: -35% !important;">
         <div class="footer-bottom">
             <p>Copyright 2023. Designed by <span>Yijia | Alena | Yiling</span></p> 
             <ul class="socials">
@@ -231,30 +235,29 @@
 
         // find the highest score, and assign it to fcolour
         if (scores[0] == A) {
-            fcolour = "Orange";
+            fcolour = "<span style='color:#ffa500'>Orange</span>";
         } else if (scores[0] == B) {
-            fcolour = "Green";
+            fcolour = "<span style='color:#9acd32'>Green</span>";
         } else if (scores[0] == C) {
-            fcolour = "Blue";
+            fcolour = "<span style='color:#00bfff'>Blue</span>";
         } else if (scores[0] == D) {
-            fcolour = "Gold";
+            fcolour = "<span style='color:#ffd700'>Gold</span>";
         }
 
         // find the second highest score, and assign it to scolour
         // (make sure it's not the same as the first in case of a tie!)
         if (scores[1] == A && fcolour != "Orange") {
-            scolour = "Orange";
+            scolour = "<span style='color:#ffa500'>Orange</span>";
         } else if (scores[1] == B && fcolour != "Green") {
-            scolour = "Green";
+            scolour = "<span style='color:#9acd32'>Green</span>";
         } else if (scores[1] == C && fcolour != "Blue") {
-            scolour = "Blue";
+            scolour = "<span style='color:#00bfff'>Blue</span>";
         } else if (scores[1] == D && fcolour != "Gold") {
-            scolour = "Gold";
+            scolour = "<span style='color:#ffd700'>Gold</span>";
         }
 
         document.getElementById("fcolour").innerHTML = fcolour;
         document.getElementById("scolour").innerHTML = scolour;
-
     </script>
 
 </body>
