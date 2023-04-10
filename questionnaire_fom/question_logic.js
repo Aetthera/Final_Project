@@ -15,7 +15,7 @@ function validateOrder(button) {
     }
 }
 
-function calculateScore(question_number) {
+function calculateScore(question_number) { 
     //Possible 4 points
     var a, b, c, d;
 
