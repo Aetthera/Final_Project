@@ -11,7 +11,7 @@ function validateOrder(button) {
         if (other_button.checked) {
             alert("Each question must have a unique answer!");
             other_button.checked = false;
-        }
+        } 
     }
 }
 
