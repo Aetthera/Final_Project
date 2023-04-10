@@ -68,9 +68,47 @@ header{
 
 /* SCORE PAGE*/
 .main-question-box-score{
+    margin: 0 5rem;
+    background: blur;
+    background-color: rgba(0,0,0, 0.3);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, .5); 
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 1);
+    z-index: -1;
     margin-top: 10%;
-    margin-left: 5%;
 }
+
+table{
+    font-size: 20px;
+    margin: 5% auto 5% auto;
+}
+
+table, th, td {
+    border: 1px solid rgba(255,255,255, 0.2);
+    border-collapse: collapse;
+}
+
+
+td{
+    text-align: center;
+}
+
+.p-score{
+    text-align: center;
+    font-size: large;
+}
+
+.color-score{
+    padding: 20px;
+    display:inline-flex;
+}
+
+.p-more{
+    text-align: center;
+    padding-top: 40px;
+}
+
 
 /* Intro */
 .questionnaire {
@@ -164,12 +202,6 @@ input[type='radio']:checked {
 label{
     display: block;
 }
-
-/* .answer-button-box{
-    width: 100%;
-    text-align: justify;
-    margin: 0 10rem;
-} */
 
 .form .btn-submit {
     width: 100px;
