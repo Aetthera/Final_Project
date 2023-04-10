@@ -1,37 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Codespaces
-Marketplace
-Explore
- 
-@AlenaBelova 
-AlenaBelova
-/
-Final_Project
-Public
-Cannot fork because you own this repository and are not a member of any organizations.
-Code
-Issues
-Pull requests
-1
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-Final_Project/questionnaire_fom/question_logic.js /
-This commit does not belong to any branch on this repository, and may belong to a fork outside of the repository.
-@JiangYiJia6
-JiangYiJia6 don't allow submitting unless all questions are answered
-Latest commit e69cda2 2 hours ago
- History
- 2 contributors
-@JiangYiJia6@AlenaBelova
-44 lines (36 sloc)  1.43 KB
- 
 
 function validateOrder(button) {
     const id = button.id; 
