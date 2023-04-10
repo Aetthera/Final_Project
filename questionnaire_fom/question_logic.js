@@ -77,18 +77,3 @@ function calculateScore(question_number) {
     //btn login and close events 
     btn.addEventListener('click', ()=> {wrapper.classList.add('active');});
 }
-Footer
-© 2023 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Final_Project/question_logic.js at e69cda296da2e2d4001b30f365717925f011e464 · AlenaBelova/Final_Project
