@@ -1,5 +1,5 @@
 function validateOrder(button) {
-    const id = button.id; 
+    const id = button.id;
     const id_group = id[1];
     const id_val = parseInt(id[2]);
 
@@ -39,6 +39,6 @@ function calculateScore(question_number) {
 
     const btn = document.querySelector('.btn-submit');
 
-    //btn login and close events 
+    //btn login and close events
     btn.addEventListener('click', ()=> {wrapper.classList.add('active');});
 }
