@@ -28,7 +28,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 100px; 
+    padding: 20px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,27 +36,27 @@ header{
 }
 
 .logo{
-    font-size: 2em; 
+    font-size: 2em;
     color: #FFF5EE;
     user-select: none;
 }
 
-.navigation a { 
-    position: relative; 
+.navigation a {
+    position: relative;
     font-size: 1.1em;
     color: #FFF5EE;
     text-decoration: none;
     margin-left: 40px;
 }
 
-.navigation a::after { 
+.navigation a::after {
     content: '';
     position: absolute;
     left: 0;
     bottom: -6px;
-    width: 100%; 
+    width: 100%;
     height: 3px;
-    background: #FFF5EE; 
+    background: #FFF5EE;
     border-radius: 5px;
     transform: scaleX(0);
     transition: transform .3s;
@@ -72,7 +72,7 @@ header{
     background: blur;
     background-color: rgba(0,0,0, 0.3);
     backdrop-filter: blur(10px);
-    border: 2px solid rgba(255, 255, 255, .5); 
+    border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 1);
     z-index: -1;
@@ -154,7 +154,7 @@ td{
     background: blur;
     background-color: rgba(0,0,0, 0.3);
     backdrop-filter: blur(10px);
-    border: 2px solid rgba(255, 255, 255, .5); 
+    border: 2px solid rgba(255, 255, 255, .5);
     border-radius: 20px;
     box-shadow: 0 0 30px rgba(0, 0, 0, 1);
     z-index: -1;
@@ -172,16 +172,16 @@ h3.answer{
 
 .answer-button-box{
     border: none;
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	break-before: always;
-	margin: 1em 0 3em 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    break-before: always;
+    margin: 1em 0 3em 3em;
 }
 
 .col-md-1{
     display: flex;
-	flex-direction: row;
+    flex-direction: row;
     margin: 0 1.8em 0 0;
 }
 
@@ -197,7 +197,7 @@ input[type='radio'] {
 
 input[type='radio']:checked {
     background: #FFBF00;
-  }
+}
 
 label{
     display: block;
@@ -206,11 +206,11 @@ label{
 .form .btn-submit {
     width: 100px;
     height: 40px;
-    background: transparent; 
+    background: transparent;
     border: 2px solid #FFF5EE;
     outline: none;
-    border-radius: 6px; 
-    cursor: pointer; 
+    border-radius: 6px;
+    cursor: pointer;
     font-size: 1.1em;
     color: #FFF5EE;
     transition: .3s;
@@ -218,7 +218,7 @@ label{
 }
 
 .form .btn-submit:hover{
-    background: #FFF5EE; 
+    background: #FFF5EE;
     color: #162938;
 }
 
@@ -233,30 +233,30 @@ footer{
     left: 0;
     right: 0 ;
     background: transparent;
-    height: auto; 
-    width: 100vw; 
+    height: auto;
+    width: 100vw;
     margin-bottom: -20%;
-    margin-top: 100%; 
+    margin-top: 100%;
     color: #FFF5EE;
 }
 
-.footer-bottom{ 
+.footer-bottom{
     background: blur;
     backdrop-filter: blur(10px);
     width: 100vw;
-    padding: 20px 0; 
+    padding: 20px 0;
     text-align: center;
 }
 
 .footer-bottom p{
-    font-size: 14px; 
+    font-size: 14px;
     word-spacing: 2px;
     text-transform: capitalize;
 }
 
 .footer-bottom span{
     text-transform: uppercase;
-    opacity: .4; 
+    opacity: .4;
     font-weight: 200;
 }
 .socials{
@@ -281,6 +281,6 @@ footer{
     transition: color .4s ease;
 }
 
-.socials a:hover ion-icon{ 
+.socials a:hover ion-icon{
     color: aqua;
 }
